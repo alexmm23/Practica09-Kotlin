@@ -1,0 +1,33 @@
+<!-- res/layout/item_guardabosque.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/border_item">
+
+    <TextView
+        android:id="@+id/nombreTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/edadTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edad" />
+
+    <TextView
+        android:id="@+id/experienciaTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Experiencia" />
+
+    <TextView
+        android:id="@+id/parqueTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Parque" />
+</LinearLayout>

@@ -1,0 +1,47 @@
+<!-- res/layout/activity_guardabosque.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Campo de entrada para el Nombre del Guardabosque -->
+    <EditText
+        android:id="@+id/nombreEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del Guardabosque"
+        android:imeOptions="actionNext" />
+
+    <!-- Campo de entrada para la Edad -->
+    <EditText
+        android:id="@+id/edadEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Edad"
+        android:inputType="number"
+        android:imeOptions="actionNext" />
+
+    <!-- Campo de entrada para la Experiencia -->
+    <EditText
+        android:id="@+id/experienciaEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Experiencia"
+        android:imeOptions="actionNext" />
+
+    <!-- Campo de entrada para el Parque -->
+    <EditText
+        android:id="@+id/parqueEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Parque"
+        android:imeOptions="actionNext" />
+
+    <!-- Botón para Registrar -->
+    <Button
+        android:id="@+id/registrarButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar" />
+</LinearLayout>

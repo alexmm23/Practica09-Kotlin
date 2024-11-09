@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Campo de entrada para el Nombre del Parque -->
+    <EditText
+        android:id="@+id/nombreEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del Parque"
+        android:imeOptions="actionNext" />
+
+    <!-- Campo de entrada para la Ubicación -->
+    <EditText
+        android:id="@+id/ubicacionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ubicación"
+        android:imeOptions="actionNext" />
+
+    <!-- Campo de entrada para el Tamaño -->
+    <EditText
+        android:id="@+id/tamanoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tamaño (hectáreas)"
+        android:inputType="numberDecimal"
+        android:imeOptions="actionNext" />
+
+    <!-- Campo de entrada para el Tipo de Flora -->
+    <EditText
+        android:id="@+id/floraEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tipo de Flora"
+        android:imeOptions="actionNext" />
+
+    <!-- Campo de entrada para el Tipo de Fauna -->
+    <EditText
+        android:id="@+id/faunaEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tipo de Fauna"
+        android:imeOptions="actionNext" />
+
+    <!-- Botón para Registrar -->
+    <Button
+        android:id="@+id/registrarButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar" />
+
+    <!-- Botón para Buscar -->
+    <Button
+        android:id="@+id/buscarButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Botón para Editar -->
+    <Button
+        android:id="@+id/editarButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Editar"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Botón para Eliminar -->
+    <Button
+        android:id="@+id/eliminarButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>
