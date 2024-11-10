@@ -25,7 +25,7 @@ class MenuActivity : AppCompatActivity() {
         // Configurar Toolbar como ActionBar
         val toolbar = findViewById<Toolbar>(R.id.menuToolbar)
         setSupportActionBar(toolbar)
-
+    /*
         // Inicializar botones
         parquesButton = findViewById(R.id.parquesButton)
         guardabosquesButton = findViewById(R.id.guardabosquesButton)
@@ -55,6 +55,8 @@ class MenuActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
+     */
     }
 
     // Crear el menú de opciones en la Toolbar

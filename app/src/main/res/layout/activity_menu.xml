@@ -13,8 +13,7 @@
         android:background="?attr/colorPrimary"
         android:title="Menú Principal"
         android:titleTextColor="#FFFFFF" />
-
-    <!-- Resto del contenido debajo de la Toolbar -->
+<!--
     <Button
         android:id="@+id/parquesButton"
         android:text="Parques"
@@ -49,4 +48,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"/>
+
+    -->
 </LinearLayout>
