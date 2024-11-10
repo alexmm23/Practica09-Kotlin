@@ -6,11 +6,12 @@
 
     <ImageView
         android:id="@+id/logoImageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_launcher_background"
+        android:layout_width="232dp"
+        android:layout_height="213dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="24dp"/> <!-- Separación extra debajo del logo -->
+        android:layout_marginBottom="24dp"
+        android:maxWidth="50dp"
+        android:src="@drawable/bosques" /> <!-- Separación extra debajo del logo -->
 
     <EditText
         android:id="@+id/usernameEditText"
