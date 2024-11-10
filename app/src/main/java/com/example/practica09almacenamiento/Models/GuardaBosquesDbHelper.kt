@@ -1,11 +1,14 @@
 package com.example.practica09almacenamiento.Models
 
+import android.content.ContentValues
 import android.content.Context
+import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 
 class GuardaBosquesDbHelper(context: Context) :
     SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {
+
     companion object {
         const val DATABASE_NAME = "Guardabosques.db"
         const val DATABASE_VERSION = 1
@@ -32,5 +35,26 @@ class GuardaBosquesDbHelper(context: Context) :
     override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
         db.execSQL("DROP TABLE IF EXISTS $TABLE_NAME")
         onCreate(db)
+    }
+
+    fun buscarGuardabosque(nombre: String): Cursor {
+        val db = this.readableDatabase
+        return db.query(TABLE_NAME, null, "$COLUMN_NOMBRE=?", arrayOf(nombre), null, null, null)
+    }
+
+    fun editarGuardabosque(id: Int, nombre: String, edad: Int, experiencia: String, parque: String): Int {
+        val db = this.writableDatabase
+        val values = ContentValues().apply {
+            put(COLUMN_NOMBRE, nombre)
+            put(COLUMN_EDAD, edad)
+            put(COLUMN_EXPERIENCIA, experiencia)
+            put(COLUMN_PARQUE, parque)
+        }
+        return db.update(TABLE_NAME, values, "$COLUMN_ID=?", arrayOf(id.toString()))
+    }
+
+    fun borrarGuardabosque(id: Int): Int {
+        val db = this.writableDatabase
+        return db.delete(TABLE_NAME, "$COLUMN_ID=?", arrayOf(id.toString()))
     }
 }
